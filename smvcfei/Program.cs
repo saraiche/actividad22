@@ -11,7 +11,7 @@ using System;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();
+builder.Services.AddControllersWithViews();
 
 //Soporte para SQL Server
 builder.Services.AddDbContext<IdentityContext>(options =>
